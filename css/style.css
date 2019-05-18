@@ -1,7 +1,13 @@
+html,
 body {
-    width: 70%;
-    margin: 1% auto;
+    height: 100%;
     background: linear-gradient(to left, #753611, #101010);
+}
+
+.main {
+    width: 70%;
+    min-height: 95%;
+    margin: 0 auto;    
 }
 /* контейнер просто содержит узлы.
  Узел сам будет отвечать за свой отступ */
@@ -154,7 +160,6 @@ header {
 article {
     float: right;
     width: 64%;
-    height: 704px;
     padding: 0px;
     text-align: center;
     border: 4px solid #ff8100;
@@ -166,7 +171,6 @@ article {
 aside {
     float:left;
     width: 30%;
-    height: 700px;
     border: 4px solid #ff8100;
     border-radius:7px;
     margin-left: 1.5%;
@@ -194,18 +198,11 @@ section {
 }
 
 #center {
-    margin: 2%;
-    width: 96%;
-    height: 590px;
-    overflow: auto;
+    margin-left: 5%;
+    width: 90%;
 }
 
 p {
-    height: auto;
-    width: auto;
-    margin: 0%;
-    float: left;
-    overflow: auto; 
     padding: 5px;
 }
 
@@ -235,14 +232,21 @@ span {
 img {
     /*max-width: 100%;*/
     /*max-height: 100%;*/
-    height: 100%;
+    /*height: 100%;*/
     width: 100%; 
-    background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
 }
 
 .clr {
     clear: both;
-    float: none;
+    height: 50px;
+}
+
+.footer {
+    width: 70%;
+    height: 50px;
+    margin-top: -50px;
+    margin: 0 auto;
 }
 
 /*~~~o~~~o~~~o~~~o~~~o~~~o~~~o~~~o~~~o~~~o~~~o~~~o*/
