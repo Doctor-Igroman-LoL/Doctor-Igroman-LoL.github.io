@@ -63,9 +63,9 @@ for (var i = 0; i < elementsWithDependent.length; i++) {
 
 };
 
-document.getElementById('checkBox').onchange = function () {
+//document.getElementById('checkBox').onchange = function () {
 
-	var imgSize = document.getElementsByTagName('img');
+	//var imgSize = document.getElementsByTagName('img');
 	// console.log(changeCheckBox);
 	// var changeCheckBox;
 	// if (changeCheckBox === true) {
@@ -75,8 +75,8 @@ document.getElementById('checkBox').onchange = function () {
 	// };
 	// console.log(changeCheckBox);	
 
-	for (var j = 0; j < imgSize.length; j++) {
-		console.log(imgSize[j]);
+	//for (var j = 0; j < imgSize.length; j++) {
+	//	console.log(imgSize[j]);
 		// if (imgSize[j].width < 1) {
 		// 	console.log('No');
 		// }
@@ -84,16 +84,16 @@ document.getElementById('checkBox').onchange = function () {
 		
 
 
-		var center = document.getElementById("center");
+	//	var center = document.getElementById("center");
 		// center.style.overflow = "visible";
 		// imgSize[j].style.max-width = 100 + "%";
 		// imgSize[j].style.max-height = "100%";		
-		imgSize[j].style.width = 'initial';  //auto\9
-		imgSize[j].style.height = 'initial';  //auto
+	//	imgSize[j].style.width = 'initial';  //auto\9
+	//	imgSize[j].style.height = 'initial';  //auto
 		// imgSize[j].style.backgroundSize = "auto auto";
-	};
+	//};
 
-};
+//};
 
 // document.getElementById('save').onclick = function () {
 // 	var dependentImages = document.getElementsByTagName('img');
