@@ -1,16 +1,3 @@
-nav {
-	background-color: #232203;
-}
-
-nav ul a {
-	color: #bfab6c;
-}
-
 nav .brand-logo.right {
 	right: 1.5rem;
-	color: #bfab6c;
-}
-
-nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
-	color: #bfab6c;
 }
