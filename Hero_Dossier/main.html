@@ -6,23 +6,30 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
+
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="Space_Engine_Shop/main.html">Space_Engine_Shop</a></li>
+        <li><a href="Online_Store/main.html">Online Store</a></li>
+      </ul>       
       <nav>
         <div class="nav-wrapper #827717 lime darken-4">
           <div class="container">
-            <a href="index.html" class="brand-logo right"><img src="logo.png" height="60px" width="60px"></a>
+            <a href="../index.html" class="brand-logo right"><img src="../logo.png" height="60px" width="60px"></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
               <li><a href="https://github.com/Doctor-Igroman-LoL">Doctor Bug</a></li>
               <li><a href="Infernal_Cook/main.html">Infernal Cook</a></li>
               <li><a href="https://github.com/Doctor-Igroman-LoL/NotepadBattle">NotepadBattle</a></li>
-              <li><a href="Space_Engine_Shop/main.html">Homework</a></li>
+              <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown1">Homework<i class="material-icons right">arrow_drop_down</i></a>
+              </li>
             </ul>
         
             <ul class="sidenav" id="mobile-demo">
@@ -35,13 +42,28 @@
         </div>
       </nav>
       <div class="container">
+
+        <div class="section">
+          <div class="col s12 m6 l4">
+            <h1>Досье героев</h1>
+            <p>Здесь размещено краткая биография персонажей</p>
+          </div>
+        </div>
+
         <div class="section">
           <div class="row">
             <div class="col s12 m6 l4">
-              <img src="../img/dossier1.jpg">
+              <img src="../img/dossier1.jpg" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 m6 l4">
+              <img src="../img/dossier1.jpg" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 m6 l4">
+              <img src="../img/dossier1.jpg" class="responsive-img materialboxed">
             </div>
           </div>
         </div>
+
       </div>
 
       <!--JavaScript at end of body for optimized loading-->
@@ -51,6 +73,8 @@
           $(document).ready(function(){
             $('.sidenav').sidenav();
             $('.carousel').carousel();
+            $(".dropdown-trigger").dropdown();
+            $('.materialboxed').materialbox();         
           });
             $('.carousel.carousel-slider').carousel({
               fullWidth: true,
