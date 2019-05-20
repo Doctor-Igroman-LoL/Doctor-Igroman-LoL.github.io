@@ -5,3 +5,7 @@ nav .brand-logo.right {
 nav .brand-logo {
 	position: static;
 }
+
+.dropdown-trigger {
+	width: 120%;
+}
